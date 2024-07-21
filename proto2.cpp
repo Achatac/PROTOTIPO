@@ -41,7 +41,7 @@ void OpcionSeleccionarHabitacion() {
     int opcionHabitacion;
     do {
         cout << "Habitaciones..." << endl;
-        for (int i = 0; i < 4; ++i) { // Limitar la visualización a 4 habitaciones para este ejemplo
+        for (int i = 0; i < 4; ++i) { // Limitar la visualización a 4 habitaciones por ahora 
             cout << i + 1 << ".    A " << 100 + i << " [   " << HabitacionOcupada[MatrizHabitaciones[0][i]]  << "  ]" << endl;
         }
 
@@ -50,7 +50,7 @@ void OpcionSeleccionarHabitacion() {
             int Numero = opcionHabitacion - 1;
             if (MatrizHabitaciones[0][Numero] == 0) {
                 RegistroUsuario(Numero);
-                MatrizHabitaciones[0][Numero] = 1; // Marcar la habitación como ocupada
+                MatrizHabitaciones[0][Numero] = 1; // Marcar la habitación como ocupada aunque deberia mandar desocupada 
             } else {
                 cout << "Habitación ocupada por: " << InformacionUsuario[Numero].NombreUsuario << endl;
             }
