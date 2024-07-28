@@ -1,13 +1,12 @@
-//suma.cpp 
+//resta.cpp
 
-#include "suma.h"
+#include "resta.h"
 #include <iostream>
-
 using namespace std;
 
-void suma(){
+void resta(){
     int a, b;
     cin >> a;
     cin >> b;
-    cout << a + b;
+    cout << a - b << endl;
 }
