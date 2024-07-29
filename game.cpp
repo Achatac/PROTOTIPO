@@ -29,7 +29,7 @@ void vaciarMatriz() {
 }
 
 void RegistroUsuario(int Numero) {
-    cout << "Por favor registre los datos de la persona" << endl;
+    cout << "Registre los datos de la persona" << endl;
     cout << "Datos de la persona" << endl;
     cout << "Nombre: "; cin >> InformacionUsuario[Numero].NombreUsuario;
     cout << "Tiempo (h): "; cin >> InformacionUsuario[Numero].HorasHabitacion;
