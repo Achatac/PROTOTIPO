@@ -33,10 +33,10 @@ void vaciarMatriz() {
 void RegistroUsuario(int Numero) {
     cout << "Registre los datos de la persona" << endl;
     cout << "Datos de la persona" << endl;
-    cout << "Nombre: "; cin >> InformacionUsuario[Numero].NombreUsuario;
-    cout << "Tiempo (h): "; cin >> InformacionUsuario[Numero].HorasHabitacion;
-    cout << "Clase (a, b ,c): "; cin >> InformacionUsuario[Numero].ClaseHabitacion;
-    cout<<"xd";
+    cout << " - Nombre: "; cin >> InformacionUsuario[Numero].NombreUsuario;
+    cout << " - Tiempo (h): "; cin >> InformacionUsuario[Numero].HorasHabitacion;
+    cout << " - Clase (a, b ,c): "; cin >> InformacionUsuario[Numero].ClaseHabitacion;
+
     InformacionUsuario[Numero].NroHabitacion = Numero;
 }
 
@@ -55,10 +55,10 @@ void OpcionSeleccionarHabitacion() {
                 RegistroUsuario(Numero);
                 MatrizHabitaciones[0][Numero] = 1; // Marcar la habitación como ocupada
             } else {
-                cout << "Habitación ocupada por: " << InformacionUsuario[Numero].NombreUsuario << endl;
+                cout << "Habitacion ocupada por: " << InformacionUsuario[Numero].NombreUsuario << endl;
             }
         } else if (opcionHabitacion != 0) {
-            cout << "No válido. Intente de nuevo" << endl;
+            cout << "No valido. Intente de nuevo" << endl;
         }
     } while (opcionHabitacion != 0);
 }
