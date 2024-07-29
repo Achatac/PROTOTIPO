@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
+ 	
+	
 
 struct Empleado {
     string NombreEmpleado;
@@ -34,6 +36,7 @@ void RegistroUsuario(int Numero) {
     cout << " - Nombre: "; cin >> InformacionUsuario[Numero].NombreUsuario;
     cout << " - Tiempo (h): "; cin >> InformacionUsuario[Numero].HorasHabitacion;
     cout << " - Clase (a, b ,c): "; cin >> InformacionUsuario[Numero].ClaseHabitacion;
+
     InformacionUsuario[Numero].NroHabitacion = Numero;
 }
 
