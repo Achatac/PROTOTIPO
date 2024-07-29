@@ -2,6 +2,7 @@
 #include <iostream>
 #include "suma.h"
 #include "resta.h"
+#include "mult.h"
 
 using namespace std;
 
@@ -10,5 +11,6 @@ int main (){
 
     suma();
     resta();
+    mult();
     return 0;
 }
